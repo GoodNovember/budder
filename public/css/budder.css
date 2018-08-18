@@ -1,0 +1,91 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+#root{
+	height: 100vh;
+	overflow: hidden;
+}
+
+.app-root{
+	height: 100%;
+	overflow: hidden;
+}
+.budder-control{
+	height: 100%;
+	display:flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.card-list{
+	overflow-y:scroll;
+	border-top: 1px solid black;
+	flex-grow: 1;
+}
+.toggleButton{
+	padding: .5em;
+	display: inline-block;
+	text-align: center;
+	user-select: none;
+	color: black;
+	flex-shrink:0;
+	width: 5rem;
+}
+
+.toggleButton.toggleButton--on{
+	background: rgba(0,255,0,1);
+}
+
+.toggleButton.toggleButton--off{
+	background: rgba(255,0,0,1);
+}
+
+.card{
+	color: black;
+	margin: .25rem;
+	background: #eee;
+}
+
+.card .order{
+	padding: .5rem;
+	text-align: center;
+	min-width: 3rem;
+}
+
+.card__body{
+	display: flex;
+	align-items: center;
+}
+
+.card__body .spacer{
+	flex-grow: 1;
+}
+
+.card canvas{
+	z-index: -1;
+	height: .25rem;
+	width: 100%;
+	display: block;
+	background: rgb(218, 218, 218);
+}
+
+.card__titles{
+	padding: 0 0.5rem;
+	font-weight: bolder;
+}
+
+.card__position{
+	width: 100%;
+	max-width: 6rem;
+}
+
+.card__subtitle{
+	background: rosybrown;
+}

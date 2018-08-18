@@ -1,0 +1,85 @@
+.card-deck{
+	display:flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.card-deck__card-list{
+	display:flex;
+	flex-direction: column;
+	overflow-y:scroll;
+	flex-grow: 1;
+}
+
+.card-deck__show-button{
+	padding: 1em;
+	border: 1px solid;
+	background: greenyellow;
+	text-align: center;
+}
+
+.card-deck__top-bar{
+	border-bottom: 1px solid black;
+}
+
+.card-deck__bottom-bar{
+	border-top: 1px solid black;
+}
+
+.card-deck__control-button{
+	padding: 1em;
+	border: 1px solid;
+	width: 4rem;
+	height: 4rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	text-align: left;
+}
+
+.card-deck__control-button.--show{
+	background: gold;
+	color: black;
+}
+
+.card-deck__control-button.--play.--enabled{
+	background: magenta;
+	color: yellow;
+}
+
+.card-deck__control-button.--play.--disabled{
+	color: rgb(102, 102, 102);
+	background: rgb(202, 202, 202);
+}
+
+
+
+.card-deck__control-button.--blackout.--on{
+	color: rgb(255, 238, 0);
+	background: rgb(151, 149, 4);
+}
+.card-deck__control-button.--blackout.--off{
+	color: rgb(102, 102, 102);
+	background: rgb(202, 202, 202);
+}
+
+.card-deck__control-button.--next.--enabled,
+.card-deck__control-button.--previous.--enabled{
+	background: yellow;
+	color: green;
+}
+
+.card-deck__control-button.--next.--disabled,
+.card-deck__control-button.--previous.--disabled{
+	color: rgb(102, 102, 102);
+	background: rgb(202, 202, 202);
+}
+
+.card-deck__button-corral{
+	display: flex;
+}

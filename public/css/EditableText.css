@@ -1,0 +1,32 @@
+.editable-text{
+	display:flex;
+}
+
+.editable-text.editable-text--edit-mode{
+	background: yellow;
+}
+
+.editable-text__label{
+	display: none;
+}
+
+.editable-text__input{
+	width:100%;
+	outline: none;
+	font-size: 1rem;
+	font-family: unset;
+	border: none;
+}
+
+.editable-text__form{
+	width:100%;
+}
+
+
+.editable-text.editable-text--edit-mode .editable-text__label{
+	display: none;
+}
+
+.editable-text.editable-text--edit-mode .editable-text__input{
+	display: block;
+}
